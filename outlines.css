@@ -1,0 +1,121 @@
+:root {
+    --dark-primary: #689F38;
+    --light-primary: #DCEDC8;
+    --primary: #8BC34A;
+    --text: #212121;
+    --accent: #4CAF50;
+    --primary-text: #212121;
+    --secondary-text: #757575;
+    --divider: #BDBDBD;
+}
+
+body {
+    /*background: var(--light-primary);*/
+    /*background-repeat: no-repeat;*/
+    background-image: linear-gradient(rgba(220, 239, 200, 0.7), rgba(139, 195, 74, 239)), url("imgton.png");
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.header {
+    /*background-color: var(--dark-primary);*/
+    background-image: linear-gradient(var(--dark-primary), var(--light-primary));
+
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    background-image: linear-gradient(rgba(220, 237, 200, 0.7), rgba(139, 195, 74, 0.7));
+}
+
+.header__h1 {
+    margin-left: 1rem;
+    flex: 2;
+    font-size: x-large
+}
+
+.header__logo {
+    /*height: 100%;*/
+    height: 5rem;
+    display: flex;
+}
+
+.header__logo .logo__image {
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    flex-grow: 3;
+    justify-content: flex-end;
+}
+
+.body__cat {
+    margin: auto;
+    /*margin-left: 40%;*/
+    background-color: rgb(168, 192, 138);
+    width: 20%;
+    box-shadow: 5px 6px rgba(0, 0, 0, 0.3), -1em 0 .4em rgba(100, 0, 0, 0.3);
+}
+
+.side-bar {
+    background-color: var(--primary);
+    padding: 0.5%;
+    width: 10%;
+    height: 100%;
+    float: left;
+    margin-top: 0;
+}
+
+.side-bar-item {
+    color: var(--text);
+    font-weight: bold;
+}
+
+.side-bar-item a {
+    text-decoration: none;
+    position: relative;
+    white-space: nowrap;
+    color: var(--text);
+    font-weight: bold;
+    font-family: VALORANT, sans-serif;
+}
+
+.navigation {
+    list-style-type: none;
+    position: sticky;
+    top: 0;
+}
+
+.navigation_list {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.navigation_item {
+    display: inline;
+    white-space: nowrap;
+    color: var(--text);
+    font-size: large;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.navigation_item a {
+    text-decoration: none;
+    position: relative;
+    white-space: nowrap;
+    color: var(--primary-text);
+    font-size: x-large;
+    font-family: VALORANT, sans-serif;
+    text-transform: uppercase;
+    padding: 1em;
+}
