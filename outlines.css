@@ -12,7 +12,7 @@
 body {
     /*background: var(--light-primary);*/
     /*background-repeat: no-repeat;*/
-    background-image: linear-gradient(rgba(220, 239, 200, 0.7), rgba(139, 195, 74, 239)), url("imgton.png");
+    background-image: linear-gradient(rgba(220, 239, 200, 0.7), rgba(139, 195, 74, 239)), url("img/lipton.png");
     background-attachment: fixed;
     margin: 0;
 }
