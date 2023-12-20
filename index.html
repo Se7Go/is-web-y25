@@ -5,114 +5,130 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="keywords" content="слово1, слово2, слово3">
-    <link rel="stylesheet" href="outlines.css">
-    <link rel="icon" type="image/jpeg" href="img/lipton.png"/>
-    <title>Ваш заголовок страницы</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" href="img/lipton.png"/>
+    <title>Главная</title>
+    <script src="js/pageload.js"></script>
 </head>
-<body>
+<body class="bodyWrapper">
 
 <header class="header">
-    <div class="header__logo logo">
-        <img class="logo__image" src="img/lipton.png">
+    <div class="header__logo">
+        <img src="img/lipton.png">
     </div>
-    <div class="header__h1">
-        <h1>Заголовок вашего сайта</h1>
+    <div class="header__heading1">
+        <h1><a class="navigation_link" href="/">Липтоновоз</a></h1>
     </div>
 
-    <nav class="nav">
-        <a href="#">Главная</a>
-        <a href="#">О нас</a>
-        <a href="#">Контакты</a>
-    </nav>
+    <div class="navigation">
+        <ul class="navigation_list">
+            <li class="navigation_item"><a class="navigation_link" href="index.html">Главная</a></li>
+            <li class="navigation_item"><a class="navigation_link" href="about.html">О нас</a></li>
+<!--            <li class="navigation_item"><a class="navigation_link" href="contacts.html">Контакты</a></li>-->
+            <li class="navigation_item"><a class="navigation_link" href="https://vk.com">Контакты</a></li>
+            <li class="navigation_item"><a class="navigation_link" href="table.html">Таблица</a></li>
+            <li class="navigation_item"><a class="navigation_link " href="form.html">Конструктор</a></li>
+            <li class="navigation_item"><input type="text" placeholder="Поиск"></li>
+        </ul>
+    </div>
 </header>
+<div class="page">
+    <div class="side-bar">
+        <h2 class="side-bar__item">Боковая панель</h2>
+        <ul class="side-bar__list">
+            <li class="side-bar__item">Элемент списка 1</li>
+            <li class="side-bar__item">Элемент списка 2</li>
+            <li class="side-bar__item">Элемент списка 3</li>
+        </ul>
+    </div>
+    <main class="main">
+        <div class="section">
+            <h2 class="section__heading2">Раздел 1</h2>
+            <p class="section__text">Текст вашего первого раздела.</p>
+        </div>
 
-<main>
-    <section>
-        <h2>Раздел 1</h2>
-        <p>Текст вашего первого раздела.</p>
-    </section>
+        <div class="section">
+            <h2 class="section__heading2">Раздел 2</h2>
+            <p class="section__text">Текст раздела.</p>
+            <article class="article">
+                <h3 class="article__heading3">Подраздел 1</h3>
+                <p class="article__text">Текст вашего подраздела.</p>
+            </article>
 
-    <section>
-        <h2>Раздел 2</h2>
-        <article>
-            <h3>Подраздел 1</h3>
-            <p>Текст вашего подраздела.</p>
-        </article>
+            <article class="article">
+                <h3 class="article__heading3">Подраздел 2</h3>
+                <p class="article__text">Текст вашего подраздела.</p>
+            </article>
+        </div>
 
-        <article>
-            <h3>Подраздел 2</h3>
-            <p>Текст вашего подраздела.</p>
-        </article>
-    </section>
 
-    <aside>
-        <h2>Боковая панель</h2>
-        <p>Дополнительная информация или реклама.</p>
-    </aside>
-</main>
-
-<ul>
-    <li>Элемент списка 1</li>
-    <li>Элемент списка 2</li>
-    <li>Элемент списка 3</li>
-</ul>
-
-<p>
-    Блок с псевдографикой из символов ASCII:
-<div class="body__cat"><pre>
-                _
-                \`*-.
-                 )  _`-.
-                .  : `. .
-                : _   '  \
-                ; *` _.   `*-._
-                `-.-'          `-.
-                  ;       `       `.
-                  :.       .        \
-                  . \  .   :   .-'   .
-                  '  `+.;  ;  '      :
-                  :  '  |    ;       ;-.
-                  ; '   : :`-:     _.`* ;
-         [bug] .*' /  .*' ; .*`- +'  `*'
-               `*-*   `*-*  `*-*'
-
-</pre>
-</div>
-<p>Snippet кода:
-<pre>
-    <code>
+        <p>
+            Блок с псевдографикой из символов ASCII:
+        <div class="body__cat">
+    <pre>
+        _
+        \`*-.
+         )  _`-.
+        .  : `. .
+        : _   '  \
+        ; *` _.   `*-._
+        `-.-'          `-.
+          ;       `       `.
+          :.       .        \
+          . \  .   :   .-'   .
+          '  `+.;  ;  '      :
+          :  '  |    ;       ;-.
+          ; '   : :`-:     _.`* ;
+ [bug] .*' /  .*' ; .*`- +'  `*'
+       `*-*   `*-*  `*-*'
+    </pre>
+        </div>
+        <p>Snippet кода:
+        <div class="pre code">
+     <pre>
+        <code>
         def print_hello(name):
             print("Hello, ", name)
 
         print_hello("World")
-    </code>
- </pre>
-</p>
+        </code>
+     </pre>
+        </div>
+        <blockquote class="blockquote">
+            <p>Шаг влево, шаг вправо — два шага</p>
+            <footer>— Джейсон Стетхем</footer>
+        </blockquote>
+        <div class="formula">
+            Формула вашего успеха: x<sup>2</sup> + y<sup>2</sup> = r<sup>2</sup>
+        </div>
 
-<blockquote>
-    <p>Цитата: "Ваша цитата здесь."</p>
-</blockquote>
+        <p>
+            Для выделения важных моментов используйте <strong>strong</strong> и <em>em</em>,
+            а также <b>b</b> и <i>i</i>.
+        </p>
+        <canvas width="500" height="500" class="donut"></canvas>
+        <script src="js/donut.js"></script>
+    </main>
 
-<p>
-    Формула вашего успеха: x<sup>2</sup> + y<sup>2</sup> = r<sup>2</sup>
-</p>
-
-<p>
-    Для выделения важных моментов используйте <strong>strong</strong> и <em>em</em>,
-    а также <b>b</b> и <i>i</i>.
-</p>
-<p>
-    Успех:
-    <ins>Ваш успех</ins>
-    <br>
-    Неуспех:
-    <del>Ваш неуспех</del>
-</p>
-<footer>
+</div>
+<footer class="footerWrapper">
     <p>Ваш футер с контактной информацией.</p>
+    <address>
+        Address:...
+    </address>
+    <div class="footerLinks">
+        <div class="footer__link"><a class="link" href="../lab6/index.html"><i class="arrow left"></i>Предыдущая
+            работа</a>
+        </div>
+
+    </div>
+
+    <p id="loadTime"></p>
+    <script src="js/active_page.js"></script>
+
 </footer>
 
-<script src="https://rawcdn.githack.com/ArtMan-8/outline-prototype/e73da2a1ee9031564b56ed5d98541891f7123933/js/outline-control.js"></script>
+<!--<script src="https://rawcdn.githack.com/ArtMan-8/outline-prototype/e73da2a1ee9031564b56ed5d98541891f7123933/js/outline-control.js"></script>-->
 
 </body>
 </html>

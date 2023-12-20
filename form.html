@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="keywords" content="слово1, слово2, слово3">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/preloader.css">
+    <link rel="icon" type="image/png" href="./img/lipton.png"/>
+    <title>Form</title>
+    <link rel="stylesheet" href="https://codeseven.github.io/toastr/build/toastr.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://codeseven.github.io/toastr/build/toastr.min.js"></script>
+    <script src="js/pageload.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="bodyWrapper">
+<header class="header">
+    <div class="preloader">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <div class="header__logo">
+        <img src="./img/lipton.png">
+    </div>
+    <div class="header__heading1">
+        <h1><a class="navigation_link" href="/">Липтоновоз</a></h1>
+    </div>
+
+    <div class="navigation_list">
+        <ul class="navigation_list">
+            <li class="navigation_item"><a class="navigation_link" href="index.html">Главная</a></li>
+            <li class="navigation_item"><a class="navigation_link" href="about.html">О нас</a></li>
+            <li class="navigation_item"><a class="navigation_link" href="contacts.html">Контакты</a></li>
+            <li class="navigation_item"><a class="navigation_link" href="table.html">Таблица</a></li>
+            <li class="navigation_item"><a class="navigation_link" href="form.html">Конструктор</a></li>
+            <li class="navigation_item"><input type="text" placeholder="Поиск"></li>
+        </ul>
+    </div>
+</header>
+<div class="main">
+    <div class="formWrapper">
+        <form action="" method="post" class="form">
+            <div class="form__heading1">Оставить отзыв</div>
+            <div class="form-input">
+                <label for="name">Введите Ваше имя:</label>
+                <input type="text" name="name" id="name" required/>
+            </div>
+            <div class="form-input">
+                <label for="email">Введите Ваш email:</label>
+                <input type="email" name="email" id="email" required/>
+            </div>
+            <div class="form-input">
+                <label for="feedback">Напишите отзыв:</label>
+                <input type="text" name="feedback" id="feedback" required/>
+            </div>
+            <div class="form-input">
+                <!--            <button type="button" id="submitButton">Отправить</button>-->
+                <input type="button" id="submitButton" value="Отправить">
+
+            </div>
+            <div class="form-input">
+                <!--             <button type="button" id="clearButton">Очистить хранилище</button>-->
+                <input type="button" id="clearButton" value="Очистить хранилище">
+            </div>
+        </form>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="feedbackList"></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<script src="js/preload.js"></script>
+<script src="js/fetchData.js"></script>
+<script src="js/form.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@import "root.css";
+@import "body.css";
+@import "blockquote.css";
+@import "footer.css";
+@import "header.css";
+@import "navbar.css";
+@import "page.css";
+@import "sidebar.css";
+@import "main.css";
+@import "table-styles.css";
+@import "form.css";
+
+body, footer > *, a, a:active, a:hover {
+    cursor: url("../img/cursor32.png"), auto;
+}
+
+@media screen and (min-width: 720px) {
+    body, footer > *, a, a:active, a:hover {
+        cursor: url("../img/cursor64.png"), auto;
+    }
+}
+
+@media screen and (min-width: 1980px) {
+    body, footer > *, a, a:active, a:hover {
+        cursor: url("../img/cursor128.png"), auto;
+    }
+}
+
