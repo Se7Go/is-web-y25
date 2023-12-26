@@ -34,7 +34,7 @@ h1 {
     background-image: linear-gradient(rgba(220, 237, 200, 0.7), rgba(139, 195, 74, 0.7));
 }
 
-.header__h1 {
+.header__heading1 {
     margin-left: 1rem;
     flex: 2;
     font-size: x-large

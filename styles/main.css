@@ -1,0 +1,38 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+    /*margin-left: 15vw;*/
+}
+
+.p {
+    font-family: Verdana, sans-serif;
+}
+
+.section {
+    flex: 2 0 auto;
+    margin-left: 5%;
+    font-family: "Courier New", sans-serif;
+
+}
+
+.section__text {
+
+}
+
+.section__heading2 {
+
+}
+
+.article {
+    /*font-family: "Courier New", sans-serif;*/
+
+}
+
+.article__text {
+
+}
+
+.article__heading3 {
+}
